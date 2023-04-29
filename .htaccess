@@ -1,0 +1,8 @@
+#Rewrite everything to https
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirect errordocuments 
+ErrorDocument 403 https://webbkurs.ei.hv.se/~magu0112/WPM/klensmed/403.html
+ErrorDocument 404 https://webbkurs.ei.hv.se/~magu0112/WPM/klensmed/404.html

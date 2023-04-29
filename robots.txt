@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /pages/404.html/
+Disallow: /pages/403.html/
+Sitemap: https://webbkurs.ei.hv.se/~magu0112/WPM/klensmed/sitemap.xml
